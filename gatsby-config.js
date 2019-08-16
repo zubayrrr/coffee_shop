@@ -2,6 +2,10 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+const dotenv = require("dotenv").config()
+
+let env = process.env.NODE_ENV || "development"
+
 module.exports = {
   siteMetadata: {
     title: `Coffee Shop`,
